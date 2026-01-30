@@ -9,3 +9,9 @@ spring:
           uri: lb://USER-SERVICE
           predicates:
             - Path=/users/**
+
+logging:
+  level:
+    root: INFO
+    com.ordermanagement.api_gateway: DEBUG
+    org.springframework.cloud.gateway: INFO
